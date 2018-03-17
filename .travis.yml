@@ -9,3 +9,5 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 sudo: false
+
+after_success: ./create_pull_request.sh
