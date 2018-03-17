@@ -10,4 +10,4 @@ env:
 
 sudo: false
 
-after_success: ./create_pull_request.sh
+after_success: ./scripts/create_pull_request.sh
