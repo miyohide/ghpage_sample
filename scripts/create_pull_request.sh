@@ -30,7 +30,7 @@ hub clone "ghpage_sample"
 cd
 hub checkout -b "jekyll_build_${now}"
 ## ファイルを変更する ##
-git status
+hub status
 hub add .
 hub commit -m "jekyll build ${now}"
 
