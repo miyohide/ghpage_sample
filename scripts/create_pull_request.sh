@@ -27,7 +27,7 @@ now=$(date "+%Y%m%d%H%M%S")
 
 # リポジトリに変更をコミットする
 hub clone "ghpage_sample"
-cd
+cd _
 hub checkout -b "jekyll_build_${now}"
 ## ファイルを変更する ##
 hub status
