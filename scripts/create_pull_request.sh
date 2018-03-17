@@ -26,10 +26,11 @@ export PATH="$PATH:$HOME/hub-linux-amd64-$HUB/bin"
 now=$(date "+%Y%m%d%H%M%S")
 
 # リポジトリに変更をコミットする
-hub clone "ghpage_sample" _
-cd _
+hub clone "ghpage_sample"
+cd
 hub checkout -b "jekyll_build_${now}"
 ## ファイルを変更する ##
+git status
 hub add .
 hub commit -m "jekyll build ${now}"
 
